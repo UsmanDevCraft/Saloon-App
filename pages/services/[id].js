@@ -8,9 +8,22 @@ import Header from "@/components/common/Header"
 
 const SinglePost = () => {
   const router = useRouter()
-  const { id } = router.query
+  const { id } = router.query;
+
+    // If the id is undefined (when page first loads), return null or a loading state
+    if (!id) {
+      return <div>Loading...</div>;
+    }
+
+    
   const [cartdata,setCartdata]=useState();
-  const post = expertise.find((post) => post.id === parseInt(id))
+  const post = expertise.find((post) => post.id === parseInt(id));
+
+    // If no post is found with the given id, return an error message or redirect
+    if (!post) {
+      return <div>Post not found</div>;
+    }
+    
 const addToCart=(post) =>{
 setCartdata(post);
 }

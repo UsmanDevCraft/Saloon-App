@@ -8,7 +8,19 @@ import React from "react"
 const SinglePost = () => {
   const router = useRouter()
   const { id } = router.query
-  const post = showcase.find((post) => post.id === parseInt(id))
+
+    // If the id is undefined (when page first loads), return null or a loading state
+    if (!id) {
+      return <div>Loading...</div>;
+    }
+
+  const post = showcase.find((post) => post.id === parseInt(id));
+
+    // If no post is found with the given id, return an error message or redirect
+    if (!post) {
+      return <div>Post not found</div>;
+    }
+    
 
   return (
     <>
