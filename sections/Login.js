@@ -11,7 +11,7 @@ const Login = () => {
     const onSubmit = async (e)=>{
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/api/auth/loginuser", {
+            const response = await fetch("https://backend-saloon.vercel.app/api/auth/loginuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

@@ -11,7 +11,7 @@ const AppointmentCard = () => {
 
     try {
       // Send data to the backend or database
-      const response = await fetch('http://localhost:5000/api/bookAppointment', {
+      const response = await fetch('https://backend-saloon.vercel.app/api/bookAppointment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
