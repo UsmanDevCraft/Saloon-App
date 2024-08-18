@@ -1,6 +1,6 @@
 import { home } from "@/assets/data/dummydata"
 import Banner from "@/components/Banner"
-import Expertise from "@/components/Expertise"
+import ServiceCard from "@/components/ServiceCard"
 import ShowCase from "@/components/ShowCase"
 import Testimonial from "@/components/Testimonial"
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
@@ -13,20 +13,20 @@ const Hero = () => {
       <section className='hero'>
         <div className='container'>
           <TitleLogo title='Curl Up and Dye'  className='logobg' />
-          <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
+          <h1 className='hero-title'>Transform Your Look with Us</h1>
 
           <div className='sub-heading'>
-            <TitleSm title='WEBSITES' /> <span>.</span>
-            <TitleSm title='BRANDING' /> <span>.</span>
-            <TitleSm title='DIGITAL MARKETING' />
+            <TitleSm title='Expert Stylists' /> <span>.</span>
+            <TitleSm title='Luxurious Treatments' /> <span>.</span>
+            <TitleSm title='Relax and Unwind' />
           </div>
         </div>
       </section>
       <section className='hero-sec'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='The last digital agency you ll ever need' />
-            <p>Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor. Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Nulla facilisi. Pellentesque tempus tellusut magna porttitor scelerisque.</p>
+            <Title title='Your Ultimate Hair Sanctuary' />
+            <p>At Curl Up & Dye, we believe that beauty is a journey, not a destination. Our salon is dedicated to providing you with a luxurious and personalized experience that will leave you feeling refreshed, confident, and radiant. Whether you're seeking a bold new look or a subtle touch-up, our skilled stylists are here to make your hair dreams come true.</p>
           </div>
           <div className='hero-content grid-4'>
             {home.map((item, i) => (
@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <Expertise />
+      <ServiceCard/>
       <Banner />
       <Testimonial />
       <ShowCase />

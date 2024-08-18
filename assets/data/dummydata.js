@@ -109,7 +109,7 @@ export const showcase = [
     catgeory: "BRANDING	",
   },
   {
-    id: 5,
+    id: 6,
     title: "VR Experience",
     cover: "../images/s6.jpg",
     catgeory: "WEBSITES	",

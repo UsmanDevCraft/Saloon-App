@@ -74,9 +74,9 @@ const Testimonial = () => {
                     </div>
                     <div className='details'>
                       <p>{user.desc}</p>
-                      <Link href='/#'>
+                      {/* <Link href='/#'>
                         VIEW CASE <HiOutlineArrowRight className='link-icon' />
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>

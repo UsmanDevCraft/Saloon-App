@@ -1,9 +1,10 @@
 import { showcase } from "@/assets/data/dummydata"
-import { Card } from "@/components/common/Card"
+import  ShowCase  from "@/components/ShowCase"
 import { Title, TitleSm } from "@/components/common/Title"
+
 import React from "react"
 
-const ShowCase = () => {
+const showCase = () => {
   return (
     <>
       <section className='showcase bg-top'>
@@ -15,10 +16,8 @@ const ShowCase = () => {
           </div>
           <br />
           <br />
-          <div className='grid-3'>
-            {showcase.map((item) => (
-              <Card data={item} key={item.id} caption={item.post} />
-            ))}
+          <div >
+            <ShowCase/>
           </div>
           <div className='py btn'>
             <button className='secondary-button'>View More</button>
@@ -29,4 +28,4 @@ const ShowCase = () => {
   )
 }
 
-export default ShowCase
+export default showCase
